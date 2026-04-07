@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { lato } from "@/app/ui/fonts";
-import SideNav from "./ui/dashboard/sidenav";
+import SideNav from "@/app/ui/dashboard/sidenav";
 
 export const metadata: Metadata = {
   title: "Budgefy",
@@ -14,13 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-    >
+    <html lang="en">
       <body className={`${lato.className} antialiased min-h-full m-0`}>
-        <main className="w-full">
-          {children}
-        </main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );
