@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased min-h-full m-0`}>
+      <body className={`${lato.className} antialiased min-h-screen`}>
         <main className="w-full">{children}</main>
       </body>
     </html>
