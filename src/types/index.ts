@@ -39,6 +39,7 @@ export interface Category {
 export interface Transaction {
     id: string;
     userId: string;
+    walletId: string;
     categoryId: string;
     category?: Category;
     type: TransactionType;
@@ -46,7 +47,6 @@ export interface Transaction {
     description: string | null;
     date: string;
     isRecurring: boolean;
-    createdAt: string;
 }
 
 export interface Budget {

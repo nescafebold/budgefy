@@ -1,6 +1,7 @@
 import { cedarville } from "@/app/ui/fonts";
 import NavLinks from "@/app/ui/dashboard/nav-links";
 import Profile from "@/app/ui/dashboard/profile";
+
 export default function SideNav() {
   return (
     <div className="w-full h-15 border flex flex-row md:flex-col md:h-screen md:rounded-2xl md:mx-2 bg-[#fffff9]">
