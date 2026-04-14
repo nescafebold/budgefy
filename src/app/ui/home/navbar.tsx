@@ -1,14 +1,12 @@
-import { cedarville } from "@/app/ui/fonts";
+import Logo from "@/app/ui/home/logo";
+import NavLinks from "@/app/ui/home/nav-links";
 
 export default function NavBar() {
     return (
-        <nav className="flex flex-row w-full h-20 border-b border-[#013E34]">
-            <div
-                className={`${cedarville.className} antialiased flex flex-row pt-3 ml-3 justify-center `}
-            >
-                <span className=" text-5xl font-bold">B</span>
-                <span className="text-lg hidden lg:block">udgefy</span>
-            </div>
+        <nav className="flex flex-row w-full h-20 border-b border-[#013E34] justify-between bg-[#FFFFF5] px-4 my-auto">
+            <Logo />
+            <NavLinks />
+
         </nav>
     )
 

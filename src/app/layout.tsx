@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { lato } from "@/app/ui/fonts";
-import NavBar from "@/app/ui/home/navbar";
+import ConditionalNavBar from "@/app/ui/home/condiotionalnavbar";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
   title: "Budgefy",
@@ -19,9 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className={`${lato.className} antialiased min-h-screen`}>
+      <body className={`${lato.className} antialiased min-h-screen bg-[#FFFFF8]`}>
         <div>
-          <NavBar />
+          <ConditionalNavBar />
         </div>
 
         <main className="w-full">{children}</main>

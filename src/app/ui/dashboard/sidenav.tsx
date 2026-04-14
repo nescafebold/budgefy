@@ -4,7 +4,7 @@ import Profile from "@/app/ui/dashboard/profile";
 
 export default function SideNav() {
   return (
-    <div className="w-full h-15 border flex flex-row md:flex-col md:h-screen md:rounded-2xl md:mx-2 bg-[#fffff9]">
+    <div className="w-full h-15 border flex flex-row md:flex-col md:h-screen md:rounded-2xl md:mx-2 bg-[#FFFFF5]">
       <div
         className={`${cedarville.className} antialiased flex flex-row pt-3 md:w-full md:justify-center md:items-center md:gap-1`}
       >
